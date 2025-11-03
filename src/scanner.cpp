@@ -23,6 +23,7 @@ Scanner::Scanner(const string& src) : source(src), start(0), current(0), line(1)
     keywords["flag"] = FLAG;
     keywords["true"] = BOOLEAN_LITERAL;
     keywords["false"] = BOOLEAN_LITERAL;
+    keywords["+"] = PLUS;
 }
 
 // Check if we've reached the end of source code
